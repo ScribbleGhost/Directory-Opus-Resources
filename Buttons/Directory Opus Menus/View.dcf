@@ -1,0 +1,412 @@
+<?xml version="1.0"?>
+<button backcol="none" display="label" textcol="none" type="menu">
+	<label>&amp;View</label>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>Folder &amp;Options</label>
+		<tip>Edit the appearance and settings of the current folder</tip>
+		<icon1>#format</icon1>
+		<function type="normal">
+			<instruction>Properties FOLDEROPTIONS</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none" type="menu">
+		<label>&amp;Folder Formats</label>
+		<icon1>#folderformatslist</icon1>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Folder Formats</label>
+			<tip>Open an interactive list of all saved Folder Formats</tip>
+			<icon1>#currentformattype</icon1>
+			<function type="normal">
+				<instruction>Prefs PAGE=folderformats</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" separate="yes" textcol="none">
+			<label>Format &amp;Lock</label>
+			<tip>Lock or unlock the current format in the Lister</tip>
+			<icon1>#formatlock</icon1>
+			<function type="normal">
+				<instruction>Set FORMATLOCK=Toggle</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="label" label_pos="right" separate="yes" textcol="none">
+			<label>Folder Formats</label>
+			<tip>Shows a list of your Favorite folder formats</tip>
+			<function type="normal">
+				<instruction>Properties FORMATLIST</instruction>
+			</function>
+		</button>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none" type="menu">
+		<label>Vie&amp;w Mode</label>
+		<icon1>#view</icon1>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;List</label>
+			<tip>Displays items in a list</tip>
+			<icon1>#listmode</icon1>
+			<function type="normal">
+				<instruction>Set VIEW=List</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Power</label>
+			<tip>Displays the details of each item (with more customization options than details mode)</tip>
+			<icon1>#powermode</icon1>
+			<function type="normal">
+				<instruction>Set VIEW=Power</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Details</label>
+			<tip>Displays the details of each item</tip>
+			<icon1>#detailsmode</icon1>
+			<function type="normal">
+				<instruction>Set VIEW=Details</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Tiles</label>
+			<tip>Displays files in tiles with configurable information</tip>
+			<icon1>#tile</icon1>
+			<function type="normal">
+				<instruction>Set VIEW=Tiles</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Small Icons</label>
+			<tip>Displays items using small icons</tip>
+			<icon1>#smallicons</icon1>
+			<function type="normal">
+				<instruction>Set VIEW=SmallIcons</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>Large I&amp;cons</label>
+			<tip>Displays items using large icons</tip>
+			<icon1>#largeicons</icon1>
+			<function type="normal">
+				<instruction>Set VIEW=LargeIcons</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>Th&amp;umbnails</label>
+			<tip>Displays thumbnails of image files</tip>
+			<icon1>#thumbnails</icon1>
+			<function type="normal">
+				<instruction>Set VIEW=Thumbnails</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+			<label>D&amp;etails + Thumbnails</label>
+			<tip>Displays the details of each item along with a column that shows thumbnails</tip>
+			<icon1>#thumbtails</icon1>
+			<function type="normal">
+				<instruction>Set VIEW=Details</instruction>
+				<instruction>Set COLUMNSADD=thumbnail(0,96)</instruction>
+				<instruction>@toggle:if&amp;COLUMNSTOGGLE=thumbnail</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" textcol="none" type="menu">
+			<label>T&amp;humbnails Size</label>
+			<icon1>#thumbnailsize</icon1>
+			<button backcol="none" display="label" textcol="none">
+				<label>Thumbnails Sizes</label>
+				<icon1>#newcommand</icon1>
+				<function type="normal">
+					<instruction>Show THUMBNAILSIZE=list</instruction>
+				</function>
+			</button>
+		</button>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none" type="menu">
+		<label>&amp;Lister Styles</label>
+		<icon1>#stylelist</icon1>
+		<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+			<label>&amp;Lister Styles</label>
+			<tip>Open the Lister Styles section in Preferences</tip>
+			<icon1>#styles</icon1>
+			<function type="normal">
+				<instruction>Prefs STYLEEDIT</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="label" textcol="none">
+			<label>Prefs STYLELIST</label>
+			<function type="normal">
+				<instruction>Prefs STYLELIST</instruction>
+			</function>
+		</button>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>Show Syst&amp;em Files</label>
+		<tip>Toggle display of system files and folders (those with the H and S attributes set)</tip>
+		<icon1>#showsystem</icon1>
+		<function type="normal">
+			<instruction>Set HIDESYSTEMFILES=Toggle INVERT</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>Show &amp;Hidden Files</label>
+		<tip>Toggle display of hidden files (those with the H attribute set)</tip>
+		<icon1>#showhidden</icon1>
+		<function type="normal">
+			<instruction>Set GLOBALHIDEHIDDEN=Toggle INVERT</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+		<label>&amp;Show Everything</label>
+		<tip>Show everything in the current folder tab, ignoring both local and global filters, until toggled again.</tip>
+		<icon1>#clearfilters</icon1>
+		<function type="normal">
+			<instruction>Set SHOWEVERYTHING=Toggle</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" textcol="none" type="menu">
+		<label>&amp;Quick Filter</label>
+		<icon1>#filterfield</icon1>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Set</label>
+			<tip>Enter a wildcard pattern to filter files visible in the current file display</tip>
+			<icon1>#filterfield</icon1>
+			<function type="normal">
+				<instruction>Set QUICKFILTER</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" textcol="none">
+			<label>&amp;Restore</label>
+			<tip>Restore the previous Quick filter applied in the current file display</tip>
+			<icon1>#filterfield</icon1>
+			<function type="normal">
+				<instruction>Set QUICKFILTER=!prev </instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" textcol="none">
+			<label>&amp;Clear</label>
+			<tip>Clear the Quick filter applied in the current file display</tip>
+			<icon1>#clearfilters</icon1>
+			<function type="normal">
+				<instruction>Set QUICKFILTERCLEAR </instruction>
+			</function>
+		</button>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+		<label>Clear All Local F&amp;ilters</label>
+		<tip>Clear file name and attribute filters which may be hiding files in the active window (does not affect global filters)</tip>
+		<icon1>#clearfilters</icon1>
+		<function type="normal">
+			<instruction>Set SHOWFILTERFILENAME=&quot;&quot;</instruction>
+			<instruction>Set HIDEFILTERFILENAME=&quot;&quot;</instruction>
+			<instruction>Set SHOWFILTERFOLDERS=&quot;&quot;</instruction>
+			<instruction>Set HIDEFILTERFOLDERS=&quot;&quot;</instruction>
+			<instruction>Set HIDEFILTERATTR=&quot;&quot;</instruction>
+			<instruction>Set SHOWFILTERATTR=&quot;&quot;</instruction>
+			<instruction>Set QUICKFILTERCLEAR</instruction>
+			<instruction>Select NOPATTERN SHOWHIDDEN</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none" type="menu">
+		<label>Fl&amp;at View</label>
+		<icon1>#flatviewmixednofolders</icon1>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Mixed</label>
+			<tip>Display the contents of all sub-folders in the current file display</tip>
+			<icon1>#flatviewmixed</icon1>
+			<function type="normal">
+				<instruction>Set FLATVIEW=On,Mixed</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>Mixed (&amp;No Folders)</label>
+			<tip>Display the contents of all sub-folders in the current file display (but hides the folders themselves)</tip>
+			<icon1>#flatviewmixednofolders</icon1>
+			<function type="normal">
+				<instruction>Set FLATVIEW=On,MixedNoFolders</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+			<label>&amp;Grouped</label>
+			<tip>Display the contents of all sub-folders in the current file display (grouped by location)</tip>
+			<icon1>#flatviewgrouped</icon1>
+			<function type="normal">
+				<instruction>Set FLATVIEW=On,Grouped</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Off</label>
+			<tip>Turn Flat View off and returns the folder display to normal</tip>
+			<icon1>#flatviewoff</icon1>
+			<function type="normal">
+				<instruction>Set FLATVIEW=Off</instruction>
+			</function>
+		</button>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+		<label>Chec&amp;k-Box Mode</label>
+		<tip>Toggle Check-Box Mode on or off</tip>
+		<icon1>#checkboxmode</icon1>
+		<function type="normal">
+			<instruction>Set CHECKBOXMODE=Toggle</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" textcol="none">
+		<label>A&amp;utosize Columns</label>
+		<tip>Autosize Details/Power-mode Lister columns</tip>
+		<icon1>#detailsmode</icon1>
+		<function type="script">
+			<instruction>@script JScript</instruction>
+			<instruction>function OnClick(clickData)</instruction>
+			<instruction>{</instruction>
+			<instruction>    var anyColumns = false;</instruction>
+			<instruction>    var cmdLine = &quot;Set COLUMNSADD=&quot;;</instruction>
+			<instruction>    for(var e = new Enumerator(clickData.func.sourcetab.format.columns); !e.atEnd(); e.moveNext())</instruction>
+			<instruction>    {</instruction>
+			<instruction>        var col = e.item();</instruction>
+			<instruction>        if (!col.Autosize || col.Max != 0)</instruction>
+			<instruction>        {</instruction>
+			<instruction>            if (anyColumns) cmdLine += &quot;,&quot;;</instruction>
+			<instruction>            cmdLine += col.Name;</instruction>
+			<instruction>            cmdLine += &quot;(!,a,0)&quot;; // Keep position. Auto-size. No maximum.</instruction>
+			<instruction>            anyColumns = true;</instruction>
+			<instruction>        }</instruction>
+			<instruction>    }</instruction>
+			<instruction>    if (!anyColumns) cmdLine = &quot;Set FORMAT=!folder&quot;;</instruction>
+			<instruction>    clickData.func.command.RunCommand(cmdLine);</instruction>
+			<instruction>}</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" separate="yes" textcol="none" type="menu">
+		<label>&amp;Columns</label>
+		<icon1>#detailsmode</icon1>
+		<button backcol="none" display="label" separate="yes" textcol="none">
+			<label>Column List</label>
+			<tip>Show a list of toggleable columns</tip>
+			<icon1>#newcommand</icon1>
+			<function type="normal">
+				<instruction>Set COLUMNSTOGGLE=columnlist </instruction>
+			</function>
+		</button>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none" type="menu">
+		<label>Sort &amp;By</label>
+		<icon1>#sort_alpha</icon1>
+		<button backcol="none" display="label" label_pos="right" separate="yes" textcol="none">
+			<label>Sortable Columns</label>
+			<tip>Displays a list of the current columns allowing you to change the sort order</tip>
+			<function type="normal">
+				<instruction>Set SORTBY=sortlist</instruction>
+			</function>
+		</button>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none" type="menu">
+		<label>&amp;Group By</label>
+		<icon1>#groupby</icon1>
+		<button backcol="none" display="label" label_pos="right" separate="yes" textcol="none">
+			<label>Groupable Columns</label>
+			<tip>Displays a list of the current columns allowing you to change the grouping</tip>
+			<function type="normal">
+				<instruction>Set GROUPBY=grouplist</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" separate="yes" textcol="none">
+			<label>&amp;Folders At Top</label>
+			<tip>Toggle grouping folders separately at the top of the lister when grouping is used</tip>
+			<icon1>#groupby</icon1>
+			<function type="normal">
+				<instruction>Set GROUPFOLDERSATTOP=Toggle </instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Expand all groups</label>
+			<tip>Expand all file groups</tip>
+			<icon1>#groupby</icon1>
+			<function type="normal">
+				<instruction>Go GROUPEXPAND=*</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Collapse all groups</label>
+			<tip>Collapse all file groups</tip>
+			<icon1>#groupby</icon1>
+			<function type="normal">
+				<instruction>Go GROUPCOLLAPSE=*</instruction>
+			</function>
+		</button>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none" type="menu">
+		<label>&amp;Manual Sort</label>
+		<icon1>#sortby</icon1>
+		<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+			<label>&amp;Manual Sort</label>
+			<tip>Toggle manual sort mode on/off</tip>
+			<icon1>#sortby</icon1>
+			<function type="normal">
+				<instruction>Set MANUALSORT=toggle</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Save Sort Order</label>
+			<tip>Save the manual sort order (only necessary if &apos;Automatically save manual sort order where possible&apos; is turned off in the preferences)</tip>
+			<icon1>#sortby</icon1>
+			<function type="normal">
+				<instruction>Set MANUALSORTSAVE </instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Reset Sort Order</label>
+			<tip>Removes the manual sort order and reverts to normal sorting</tip>
+			<icon1>#sort_alpha</icon1>
+			<function type="normal">
+				<instruction>Set MANUALSORTRESET </instruction>
+			</function>
+		</button>
+	</button>
+	<button backcol="none" display="both" separate="yes" textcol="none" type="menu">
+		<label>&amp;Refresh</label>
+		<icon1>#refresh</icon1>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Current</label>
+			<tip>Refresh the contents of the current folder</tip>
+			<icon1>#refresh</icon1>
+			<function type="normal">
+				<instruction>Go REFRESH</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Both</label>
+			<tip>Refresh the contents of both file displays</tip>
+			<icon1>#refresh</icon1>
+			<function type="normal">
+				<instruction>Go REFRESH=both</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Tree</label>
+			<tip>Refresh the contents of the Folder Tree</tip>
+			<icon1>#refresh</icon1>
+			<function type="normal">
+				<instruction>Go REFRESH=tree</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+			<label>&amp;All</label>
+			<tip>Refresh the contents of both file displays and the Folder Tree</tip>
+			<icon1>#refresh</icon1>
+			<function type="normal">
+				<instruction>Go REFRESH=all</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" textcol="none">
+			<label>Th&amp;umbnails</label>
+			<tip>Delete the thumbnail cache and regenerate thumbnails for the current folder</tip>
+			<icon1>#thumbnails</icon1>
+			<function type="normal">
+				<instruction>Go REFRESHTHUMBS </instruction>
+			</function>
+		</button>
+	</button>
+	<button backcol="none" display="label" textcol="none">
+		<label>View Menu Marker</label>
+		<tip>Marks the place in a menu where Namespace-specific menu items from the &apos;View&apos; menu are to be displayed</tip>
+		<function type="normal">
+			<instruction>Marker MENU=View</instruction>
+		</function>
+	</button>
+</button>

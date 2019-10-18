@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<button backcol="none" display="label" textcol="none" type="menu">
+	<label>F&amp;avorites</label>
+	<button backcol="none" display="both" textcol="none">
+		<label>&amp;Add to Favorites...</label>
+		<tip>Add the current folder to your list of favorite folders (displays a dialog that lets you edit the new Favorite entry)</tip>
+		<icon1>#favoritesadd</icon1>
+		<function type="normal">
+			<instruction>Favorites ADDDIALOG</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" separate="yes" textcol="none">
+		<label>&amp;Favorites</label>
+		<tip>Edit your list of favorite folders</tip>
+		<icon1>#favoritesedit</icon1>
+		<function type="normal">
+			<instruction>Favorites EDIT</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" separate="yes" textcol="none">
+		<label>Favorite Locations</label>
+		<tip>Shows a list of your favorite folders</tip>
+		<icon1>#favoriteslist</icon1>
+		<function type="normal">
+			<instruction>Favorites SHOWICONS USEQUALKEYS</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" textcol="none">
+		<label>SmartFavorites</label>
+		<tip>Shows any SmartFavorites (tm) that have been added</tip>
+		<icon1>#smartfavoritesmenu</icon1>
+		<function type="normal">
+			<instruction>Favorites SMART SHOWICONS USEQUALKEYS </instruction>
+		</function>
+	</button>
+</button>

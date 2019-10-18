@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+<button backcol="none" display="label" label_pos="right" textcol="none" type="menu">
+	<label>&amp;Tools</label>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>&amp;Find Files</label>
+		<tip>Search for files by name, contents or other criteria</tip>
+		<hotkeys>
+			<key>ctrl+F</key>
+			<key>f3</key>
+		</hotkeys>
+		<icon1>#find</icon1>
+		<function type="normal">
+			<instruction>Set UTILITY=Find,Toggle</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>&amp;Synchronize</label>
+		<tip>Show or hide the Lister Synchronize Panel</tip>
+		<icon1>#syncpane</icon1>
+		<function type="normal">
+			<instruction>Set UTILITY=Sync,Toggle</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+		<label>Find &amp;Duplicate Files</label>
+		<tip>Show or hide the Lister Duplicate File Finder Panel</tip>
+		<icon1>#dupepane</icon1>
+		<function type="normal">
+			<instruction>Set UTILITY=Dupe,Toggle</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+		<label>&amp;Print / Export Folder Listing...</label>
+		<tip>Print the contents of a folder to the printer or a disk file</tip>
+		<icon1>#printfolder</icon1>
+		<function type="normal">
+			<instruction>Print FOLDER</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none" type="menu">
+		<label>&amp;Convert Images</label>
+		<icon1>#imageconversion</icon1>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Convert...</label>
+			<tip>Convert, rotate and resize image files</tip>
+			<icon1>#imageconversion</icon1>
+			<function type="normal">
+				<instruction>Image CONVERT HERE</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none" type="menu">
+			<label>Convert &amp;To</label>
+			<icon1>#imageconversion</icon1>
+			<button backcol="none" display="label" label_pos="right" textcol="none">
+				<label>&amp;PNG Image</label>
+				<tip>Convert selected images to PNG format</tip>
+				<function type="normal">
+					<instruction>Image HERE CONVERT=png</instruction>
+					<instruction>@nodeselect </instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" label_pos="right" textcol="none">
+				<label>&amp;JPEG Image</label>
+				<tip>Convert selected images to JPEG format</tip>
+				<function type="normal">
+					<instruction>Image HERE CONVERT=jpg QUALITY=100</instruction>
+					<instruction>@nodeselect </instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" label_pos="right" textcol="none">
+				<label>&amp;GIF Image</label>
+				<tip>Convert selected images to GIF format</tip>
+				<function type="normal">
+					<instruction>Image HERE CONVERT=gif</instruction>
+					<instruction>@nodeselect </instruction>
+				</function>
+			</button>
+			<button backcol="none" display="label" label_pos="right" textcol="none">
+				<label>&amp;Bitmap Image</label>
+				<tip>Convert selected images to BMP format</tip>
+				<function type="normal">
+					<instruction>Image HERE CONVERT=bmp</instruction>
+					<instruction>@nodeselect </instruction>
+				</function>
+			</button>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>Rotate &amp;Left</label>
+			<tip>Rotate selected images 90 degrees to the left</tip>
+			<icon1>#rotateleft</icon1>
+			<function type="normal">
+				<instruction>Image ROTATE=270 HERE REPLACE</instruction>
+				<instruction>@nodeselect</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+			<label>Rotate &amp;Right</label>
+			<tip>Rotate selected images 90 degrees to the right</tip>
+			<icon1>#rotateright</icon1>
+			<function type="normal">
+				<instruction>Image ROTATE=90 HERE REPLACE</instruction>
+				<instruction>@nodeselect</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Make Thumbnails</label>
+			<tip>Create small PNG thumbnail versions of the selected image files</tip>
+			<icon1>#imageconversion</icon1>
+			<function type="normal">
+				<instruction>Image CONVERT=png HERE ADDSUFFIX HEIGHT=128 WIDTH=128 PRESERVEASPECTRATIO</instruction>
+			</function>
+		</button>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+		<label>Set as Desktop &amp;Wallpaper</label>
+		<tip>Set the currently selected image file as the desktop wallpaper</tip>
+		<icon1>#setwallpaper</icon1>
+		<function type="normal">
+			<instruction>Properties SETWALLPAPER=menu</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" textcol="none" type="menu">
+		<label>&amp;Locate Image</label>
+		<icon1>#show</icon1>
+		<button backcol="none" display="both" textcol="none">
+			<label>&amp;Google Maps</label>
+			<icon1>#show</icon1>
+			<function type="normal">
+				<instruction>Image LOCATE=google </instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" textcol="none">
+			<label>Google &amp;Earth</label>
+			<icon1>#show</icon1>
+			<function type="normal">
+				<instruction>Image LOCATE=googleearth </instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" textcol="none">
+			<label>&amp;Bing Maps</label>
+			<icon1>#show</icon1>
+			<function type="normal">
+				<instruction>Image LOCATE=bing </instruction>
+			</function>
+		</button>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+		<label>Synchroni&amp;ze Flickr...</label>
+		<tip>Synchronize your Flickr account with photos stored locally</tip>
+		<icon1>#flickrsync</icon1>
+		<function type="normal">
+			<instruction>Image SYNCPHOTOS=flickr</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>Co&amp;ntrol Panel</label>
+		<tip>Open the Windows Control Panel</tip>
+		<icon1>#gocontrolpanel</icon1>
+		<function type="normal">
+			<instruction>Go /controls</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" separate="yes" textcol="none" type="menu">
+		<label>D&amp;efault Printer</label>
+		<icon1>#changedefprinter</icon1>
+		<button backcol="none" display="label" label_pos="right" textcol="none">
+			<label>Default Printer</label>
+			<tip>Displays a list of installed printers and lets you change the default printer</tip>
+			<icon1>#changedefprinter</icon1>
+			<function type="normal">
+				<instruction>Print DEFAULTLIST</instruction>
+			</function>
+		</button>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>Directory &amp;Opus CLI</label>
+		<tip>Open the internal Directory Opus Command-line Interface</tip>
+		<icon1>#pathfield</icon1>
+		<function type="normal">
+			<instruction>CLI</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+		<label>Ad-&amp;Hoc Script Editor</label>
+		<tip>Opens a window where you can directly type and run Opus script code and commands</tip>
+		<icon1>#pathfield</icon1>
+		<function type="normal">
+			<instruction>CLI SCRIPTMODE</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>Co&amp;mmand Prompt Here</label>
+		<tip>Open a command prompt with the current folder set to the Lister&apos;s current path</tip>
+		<icon1>#cli</icon1>
+		<function type="normal">
+			<instruction>CLI DOSPROMPT=noadmin</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+		<label>Comm&amp;and Prompt Here (Admin)</label>
+		<tip>Open an elevated command prompt with the current folder set to the Lister&apos;s current path</tip>
+		<icon1>#cliadmin</icon1>
+		<function type="normal">
+			<instruction>CLI DOSPROMPT=admin</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+		<label>Open in E&amp;xplorer</label>
+		<tip>Opens an Explorer window for the current folder</tip>
+		<icon1>#folder</icon1>
+		<function type="normal">
+			<instruction>&quot;/windows\Explorer.exe&quot; /e, {sourcepath$}</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="label" label_pos="right" textcol="none">
+		<label>Tools Menu Marker</label>
+		<tip>Marks the place in a menu where Namespace-specific menu items from the &apos;Tools&apos; menu are to be displayed</tip>
+		<function type="normal">
+			<instruction>Marker MENU=Tools</instruction>
+		</function>
+	</button>
+</button>

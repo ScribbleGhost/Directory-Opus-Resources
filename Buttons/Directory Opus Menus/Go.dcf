@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<button backcol="none" display="label" textcol="none" type="menu">
+	<label>&amp;Go</label>
+	<button backcol="none" display="both" textcol="none">
+		<label>&amp;Up One Level</label>
+		<tip>Go up to %1</tip>
+		<icon1>#goup</icon1>
+		<function type="normal">
+			<instruction>Go UP</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none" type="menu">
+		<label>&amp;Back</label>
+		<icon1>#goback</icon1>
+		<button backcol="none" display="both" separate="yes" textcol="none">
+			<label>&amp;Back</label>
+			<tip>Go back to %1</tip>
+			<icon1>#goback</icon1>
+			<function type="normal">
+				<instruction>Go BACK</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="label" textcol="none">
+			<label>Go BACKLIST</label>
+			<function type="normal">
+				<instruction>Go BACKLIST</instruction>
+			</function>
+		</button>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none" type="menu">
+		<label>&amp;Forward</label>
+		<icon1>#goforward</icon1>
+		<button backcol="none" display="both" separate="yes" textcol="none">
+			<label>&amp;Forward</label>
+			<tip>Go forward to %1</tip>
+			<icon1>#goforward</icon1>
+			<function type="normal">
+				<instruction>Go FORWARD</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="label" textcol="none">
+			<label>Go FORWARDLIST</label>
+			<function type="normal">
+				<instruction>Go FORWARDLIST</instruction>
+			</function>
+		</button>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>&amp;Go to Root</label>
+		<tip>Load the root folder of the current folder</tip>
+		<icon1>#goroot</icon1>
+		<function type="normal">
+			<instruction>Go ROOT</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" textcol="none" type="menu">
+		<label>&amp;Drives</label>
+		<icon1>#drivebuttons</icon1>
+		<button backcol="none" display="label" label_pos="right" textcol="none">
+			<label>Drive Buttons</label>
+			<tip>Automatically adds a button for each of the drives in your system to the toolbar/menu</tip>
+			<icon1>#drivebuttons</icon1>
+			<function type="normal">
+				<instruction>Go DRIVEBUTTONS=labels</instruction>
+			</function>
+		</button>
+	</button>
+	<button backcol="none" display="both" separate="yes" textcol="none" type="menu">
+		<label>&amp;System Folders</label>
+		<icon1>#drivebuttons2</icon1>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Desktop</label>
+			<tip>Open the Desktop in the current Lister</tip>
+			<icon1>#godesktop</icon1>
+			<function type="normal">
+				<instruction>Go /desktop</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Computer</label>
+			<tip>Open &apos;Computer&apos; in the current Lister</tip>
+			<icon1>#gomycomputer</icon1>
+			<function type="normal">
+				<instruction>Go /mycomputer</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>D&amp;ocuments</label>
+			<tip>Open the Documents Folder in the current Lister</tip>
+			<icon1>#gomydocuments</icon1>
+			<function type="normal">
+				<instruction>Go /mydocuments</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Start Menu</label>
+			<tip>Open the Start Menu folder in the current Lister</tip>
+			<icon1>#gostartmenu</icon1>
+			<function type="normal">
+				<instruction>Go /start</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>S&amp;tartup</label>
+			<tip>Open the Startup Folder in the current Lister</tip>
+			<icon1>#gostartfolder</icon1>
+			<function type="normal">
+				<instruction>Go /startup</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Recycle Bin</label>
+			<tip>Open &apos;Recycle Bin&apos; in the current Lister</tip>
+			<icon1>#gotrash</icon1>
+			<function type="normal">
+				<instruction>Go /trash</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Network</label>
+			<tip>Open &apos;Network&apos; in the current Lister</tip>
+			<icon1>#gonetwork</icon1>
+			<function type="normal">
+				<instruction>Go /network</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Libraries</label>
+			<tip>Open the Libraries folder in the current Lister</tip>
+			<icon1>#golibraries</icon1>
+			<function type="normal">
+				<instruction>Go lib://</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;File Collections</label>
+			<tip>Open the File Collections in the current Lister</tip>
+			<icon1>#gocollection</icon1>
+			<function type="normal">
+				<instruction>Go coll://</instruction>
+			</function>
+		</button>
+	</button>
+	<button backcol="none" display="both" separate="yes" textcol="none">
+		<label>Go to Initial &amp;Tab Folder</label>
+		<icon1>#foldertabs</icon1>
+		<function type="normal">
+			<instruction>Go INITIALDIR</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>&amp;Map Network Drive...</label>
+		<tip>Connect to a network drive</tip>
+		<icon1>#mapnetworkdrive</icon1>
+		<function type="normal">
+			<instruction>Go CONNECT</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+		<label>Disc&amp;onnect Network Drive...</label>
+		<tip>Disconnect from a network drive</tip>
+		<icon1>#disconnectnetworkdrive</icon1>
+		<function type="normal">
+			<instruction>Go DISCONNECT</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+		<label>&amp;Compatibility Files</label>
+		<tip>Go to this folder&apos;s Compatibility directory</tip>
+		<icon1>#compatibilityfiles</icon1>
+		<function type="normal">
+			<instruction>Go COMPATIBILITYFILES</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>&amp;Navigation Lock</label>
+		<tip>Lock together the navigation of both sides of a dual-display Lister</tip>
+		<icon1>#navlock</icon1>
+		<function type="normal">
+			<instruction>Set NAVLOCK=Toggle</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+		<label>S&amp;wap Source/Destination</label>
+		<tip>Swap the current source and destination folders</tip>
+		<icon1>#swapsourcedest</icon1>
+		<function type="normal">
+			<instruction>Go SWAP</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" textcol="none" type="menu">
+		<label>&amp;Recent Locations</label>
+		<tip>A popup menu that shows a list of your most recently visited folders</tip>
+		<icon1>#recentmenu</icon1>
+		<button backcol="none" display="both" separate="yes" textcol="none">
+			<label>&amp;Clear Recent List</label>
+			<tip>Clear the list of the most recently visited folders</tip>
+			<icon1>#recentlistclear</icon1>
+			<function type="normal">
+				<instruction>Recent CLEAR</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="label" textcol="none">
+			<label>Recent Locations</label>
+			<function type="normal">
+				<instruction>Recent SHOWICONS</instruction>
+			</function>
+		</button>
+	</button>
+</button>

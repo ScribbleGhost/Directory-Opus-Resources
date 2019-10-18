@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<button backcol="none" display="label" label_pos="right" textcol="none" type="menu">
+	<label>Display</label>
+	<button backcol="none" display="both" textcol="none">
+		<label>&amp;Dual Display Vertical</label>
+		<tip>Display two folders side-by-side in the same Lister</tip>
+		<icon1>#dualdisplay</icon1>
+		<function type="normal">
+			<instruction>Set DUAL=Toggle,Vert,ToggleLayout</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" textcol="none">
+		<label>Dual Display &amp;Horizontal</label>
+		<tip>Display two folders in the same Lister, one above the other</tip>
+		<icon1>#dualhorizontal</icon1>
+		<function type="normal">
+			<instruction>Set DUAL=Toggle,Horiz,ToggleLayout</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>Folder &amp;Tree</label>
+		<tip>Show or hide the Folder Tree</tip>
+		<icon1>#foldertree</icon1>
+		<function type="normal">
+			<instruction>Set TREE=Toggle</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+		<label>D&amp;ual Folder Tree</label>
+		<tip>Show or hide the second Folder Tree</tip>
+		<icon1>#foldertree</icon1>
+		<function type="normal">
+			<instruction>Set TREE=Toggle,Right</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>&amp;Status Bar</label>
+		<tip>Show or hide the Lister Status Bar</tip>
+		<icon1>#statusbar</icon1>
+		<function type="normal">
+			<instruction>Set STATUSBAR=Toggle</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" separate="yes" textcol="none">
+		<label>&amp;Jobs Bar</label>
+		<tip>Show or hide the Lister Jobs Bar</tip>
+		<icon1>#statusbar</icon1>
+		<function type="normal">
+			<instruction>Set JOBSBAR=toggle </instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" textcol="none">
+		<label>&amp;Viewer Pane</label>
+		<tip>Show or hide the Lister Viewer Pane</tip>
+		<icon1>#viewerpane</icon1>
+		<function type="normal">
+			<instruction>Set VIEWPANE=Toggle</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>&amp;Metadata Pane</label>
+		<tip>Show or hide the Metadata Pane</tip>
+		<icon1>#metapane</icon1>
+		<function type="normal">
+			<instruction>Set METAPANE=Toggle</instruction>
+		</function>
+	</button>
+</button>

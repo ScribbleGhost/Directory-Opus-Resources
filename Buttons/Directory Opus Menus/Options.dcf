@@ -1,0 +1,233 @@
+<?xml version="1.0"?>
+<button backcol="none" display="label" label_pos="right" textcol="none" type="menu">
+	<label>&amp;Options</label>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>&amp;Preferences</label>
+		<tip>Open the Directory Opus Preferences editor</tip>
+		<icon1>#prefs</icon1>
+		<function type="normal">
+			<instruction>Prefs</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>&amp;Customize</label>
+		<tip>Enter Customize Mode where you can customize the toolbars and menus</tip>
+		<icon1>#customize</icon1>
+		<function type="normal">
+			<instruction>Prefs CUSTOMIZE</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>&amp;Keyboard Map</label>
+		<tip>View and edit custom hotkeys</tip>
+		<icon1>#keyboardmap</icon1>
+		<function type="normal">
+			<instruction>Prefs KEYS</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+		<label>&amp;File Types</label>
+		<tip>Open the file types editor</tip>
+		<icon1>#filetype</icon1>
+		<function type="normal">
+			<instruction>Prefs FILETYPES</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>&amp;Sounds</label>
+		<tip>Turn Opus sound effects on or off</tip>
+		<icon1>#togglesounds</icon1>
+		<function type="normal">
+			<instruction>Set SOUNDS=Toggle</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>Full-&amp;Row Selection</label>
+		<tip>Turn Full-Row Selection on or off</tip>
+		<icon1>#fullrowselection</icon1>
+		<function type="normal">
+			<instruction>Set FULLROWSELECT=Toggle</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+		<label>&amp;Grid Lines</label>
+		<tip>Toggle grid lines on or off (Power / details mode only)</tip>
+		<icon1>#gridlines</icon1>
+		<function type="normal">
+			<instruction>Set GRIDLINES=toggle</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none" type="menu">
+		<label>&amp;Tab Groups</label>
+		<icon1>#foldertabgrouplist</icon1>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Tab Groups</label>
+			<tip>Open an interactive list of your Folder Tab Groups</tip>
+			<icon1>#EditTabGroup</icon1>
+			<function type="normal">
+				<instruction>Prefs PAGE=tabgroups</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" textcol="none">
+			<label>&amp;Save Tabs...</label>
+			<tip>Save the current Folder Tabs in this Lister as a Tab Group</tip>
+			<icon1>#SaveTabGroup</icon1>
+			<function type="normal">
+				<instruction>Go TABGROUPSAVE </instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" separate="yes" textcol="none">
+			<label>Save Tabs on &amp;Both Sides...</label>
+			<tip>Save the current Folder Tabs on both sides of this Dual Display Lister as a Tab Group</tip>
+			<icon1>#SaveTabGroup</icon1>
+			<function type="normal">
+				<instruction>Go TABGROUPSAVE=!both </instruction>
+			</function>
+		</button>
+		<button backcol="none" display="label" label_pos="right" textcol="none">
+			<label>Tab Group List</label>
+			<tip>Displays a list of your Folder Tab Groups</tip>
+			<function type="normal">
+				<instruction>Go TABGROUPLIST</instruction>
+			</function>
+		</button>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none" type="menu">
+		<label>&amp;Lister Layouts</label>
+		<icon1>#layoutlist</icon1>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Lister Layouts</label>
+			<tip>Display the Lister Layout editor</tip>
+			<icon1>#savedlayoutsedit</icon1>
+			<function type="normal">
+				<instruction>Prefs LAYOUTEDIT</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>Save &amp;This Lister...</label>
+			<tip>Save the current Lister as a Lister Layout</tip>
+			<icon1>#savesinglelister</icon1>
+			<function type="normal">
+				<instruction>Prefs LAYOUTSAVE=single</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+			<label>Save &amp;All Listers...</label>
+			<tip>Save all open Listers as a Lister Layout</tip>
+			<icon1>#savealllisters</icon1>
+			<function type="normal">
+				<instruction>Prefs LAYOUTSAVE</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="label" label_pos="right" textcol="none">
+			<label>Saved Layouts</label>
+			<tip>Displays a list of your saved Lister Layouts</tip>
+			<icon1>#layoutlist</icon1>
+			<function type="normal">
+				<instruction>Prefs LAYOUTLIST</instruction>
+			</function>
+		</button>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+		<label>Set as &amp;Default Lister</label>
+		<tip>Save the current Lister&apos;s configuration as the Default Lister settings</tip>
+		<icon1>#setdefaultlister</icon1>
+		<function type="normal">
+			<instruction>Prefs SETDEFAULTLISTER</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none" type="menu">
+		<label>T&amp;oolbars</label>
+		<icon1>#toolbarlist</icon1>
+		<button backcol="none" display="label" label_pos="right" separate="yes" textcol="none">
+			<label>Toolbar List</label>
+			<tip>Displays a list of your available toolbars</tip>
+			<function type="normal">
+				<instruction>Toolbar LIST</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+			<label>&amp;Reset to Default Toolbars</label>
+			<tip>Reset your toolbars to the default settings</tip>
+			<icon1>#resettoolbars</icon1>
+			<function type="normal">
+				<instruction>Toolbar RESETDEFAULTS</instruction>
+			</function>
+		</button>
+	</button>
+	<button backcol="none" display="both" textcol="none" type="menu">
+		<label>Toolbar S&amp;ets</label>
+		<icon1>#toolbarlist</icon1>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Toolbar Sets</label>
+			<tip>Displays the Toolbar Sets Preferences page</tip>
+			<icon1>#toolbarlist</icon1>
+			<function type="normal">
+				<instruction>Prefs PAGE=toolbarsets</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" separate="yes" textcol="none">
+			<label>&amp;Save Toolbars...</label>
+			<tip>Save the current Toolbars as a Toolbar Set</tip>
+			<icon1>#savetoolbarstate</icon1>
+			<function type="normal">
+				<instruction>Toolbar SAVESET</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="label" separate="yes" textcol="none">
+			<label>Toolbar Set List</label>
+			<icon1>#empty</icon1>
+			<function type="normal">
+				<instruction>Toolbar LIST=sets </instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Revert to Default Toolbar Set</label>
+			<tip>Revert the toolbars in this Lister to the Default Set</tip>
+			<icon1>#resettoolbars</icon1>
+			<function type="normal">
+				<instruction>Toolbar !default LOADSET=replace,nocontext</instruction>
+			</function>
+		</button>
+	</button>
+	<button backcol="none" display="both" separate="yes" textcol="none">
+		<label>Set as &amp;Default Toolbar Set</label>
+		<tip>Save the current Toolbars as the Default Toolbar Set</tip>
+		<icon1>#deftoolbar</icon1>
+		<function type="normal">
+			<instruction>Toolbar SETDEFAULT </instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>&amp;Viewer Plugins</label>
+		<tip>Displays a list of installed Viewer Plugins</tip>
+		<icon1>#viewerplugins</icon1>
+		<function type="normal">
+			<instruction>Show PLUGINLIST</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+		<label>VFS Pl&amp;ugins</label>
+		<tip>Displays a list of installed VFS (Virtual File System) Plugins</tip>
+		<icon1>#vfsplugins</icon1>
+		<function type="normal">
+			<instruction>Prefs VFSPLUGINLIST</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>Lister T&amp;hemes</label>
+		<tip>Load or Save Lister Themes</tip>
+		<icon1>#themes</icon1>
+		<function type="normal">
+			<instruction>Prefs THEMES</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>&amp;Backup and Restore</label>
+		<tip>Backup and Restore your Directory Opus configuration</tip>
+		<icon1>#saveprefs</icon1>
+		<function type="normal">
+			<instruction>Prefs BACKUPRESTORE</instruction>
+		</function>
+	</button>
+</button>

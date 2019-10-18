@@ -1,0 +1,339 @@
+<?xml version="1.0"?>
+<button backcol="none" display="label" label_pos="right" textcol="none" type="menu">
+	<label>&amp;Edit</label>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>&amp;Undo</label>
+		<tip>Undo the previous file action (copy, delete, rename, move, etc)</tip>
+		<icon1>#undo</icon1>
+		<function type="normal">
+			<instruction>Undo</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none" type="menu">
+		<label>Undo &amp;List</label>
+		<tip>Displays a list of the items in the undo list, allowing you to selectively undo your previous actions</tip>
+		<icon1>#undolist</icon1>
+		<button backcol="none" display="label" label_pos="right" separate="yes" textcol="none">
+			<label>Undo List</label>
+			<tip>Displays a list of the items in the undo list, allowing you to selectively undo your previous actions</tip>
+			<function type="normal">
+				<instruction>Undo LIST</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Undo Log</label>
+			<tip>Display the Undo Log, which allows you to selectively undo your previous actions</tip>
+			<icon1>#undodlg</icon1>
+			<function type="normal">
+				<instruction>Undo PAGE</instruction>
+			</function>
+		</button>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>Cu&amp;t</label>
+		<tip>Cut selected files and folders to the clipboard (originals will be deleted when you Paste them)</tip>
+		<icon1>#clipcut</icon1>
+		<function type="normal">
+			<instruction>Clipboard CUT</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>&amp;Copy</label>
+		<tip>Copy selected files and folders to the clipboard</tip>
+		<icon1>#clipcopy</icon1>
+		<function type="normal">
+			<instruction>Clipboard COPY</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>&amp;Paste</label>
+		<tip>Paste files and folders on the clipboard to the destination folder</tip>
+		<icon1>#clippaste</icon1>
+		<function type="normal">
+			<instruction>Clipboard PASTE</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>Paste &amp;Shortcut</label>
+		<tip>Paste shortcuts to files and folders on the clipboard to the destination folder</tip>
+		<icon1>#clippasteshortcut</icon1>
+		<function type="normal">
+			<instruction>Clipboard PASTELINK</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" separate="yes" textcol="none" type="menu">
+		<label>Paste to Archi&amp;ve</label>
+		<icon1>#clippaste</icon1>
+		<button backcol="none" display="both" textcol="none">
+			<label>&amp;New Archive...</label>
+			<tip>Paste files and folders on the clipboard into a new archive</tip>
+			<icon1>#newzipfile</icon1>
+			<function type="normal">
+				<instruction>Clipboard PASTE=zip AS=ask </instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" textcol="none">
+			<label>&amp;Selected Archive</label>
+			<tip>Paste files and folders on the clipboard into a selected archive</tip>
+			<icon1>#addtozip</icon1>
+			<function type="normal">
+				<instruction>Clipboard PASTE USESEL AS=ask </instruction>
+			</function>
+		</button>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>Copy &amp;File Names</label>
+		<tip>Copy the names of all selected files to the clipboard</tip>
+		<icon1>#copyfilenames</icon1>
+		<function type="normal">
+			<instruction>Clipboard COPYNAMES=nopaths</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>Copy Full Pat&amp;hnames</label>
+		<tip>Copy the full pathnames of all selected files to the clipboard</tip>
+		<icon1>#copyfilenames</icon1>
+		<function type="normal">
+			<instruction>Clipboard COPYNAMES</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>Copy Fol&amp;der Path</label>
+		<tip>Copy the path of the current folder to the clipboard</tip>
+		<icon1>#copyfilenames</icon1>
+		<function type="normal">
+			<instruction>Clipboard COPYNAMES=path </instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none" type="menu">
+		<label>Copy &amp;Other</label>
+		<icon1>#copyfilenames</icon1>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Short File Names</label>
+			<tip>Copy the short (8.3) filenames of all selected files to the clipboard</tip>
+			<icon1>#copyfilenames</icon1>
+			<function type="normal">
+				<instruction>Clipboard COPYNAMES=short,nopaths</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>S&amp;hort Pathnames</label>
+			<tip>Copy the short (8.3) pathnames of all selected files to the clipboard</tip>
+			<icon1>#copyfilenames</icon1>
+			<function type="normal">
+				<instruction>Clipboard COPYNAMES=short</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Full Pathnames (Double Backslashes)</label>
+			<tip>Copy full paths, and turn \\ into \\\\ for easy pasting into various programming languages</tip>
+			<icon1>#copyfilenames</icon1>
+			<function type="normal">
+				<instruction>Clipboard COPYNAMES=unc REGEXP (.*)\\(.*)# \1|\2 (.*)[|](.*)# \1\\\\\2</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>U&amp;NC Pathnames</label>
+			<tip>Copy the pathnames of all selected files to the clipboard, files on network shares are given their full UNC pathnames</tip>
+			<icon1>#copyfilenames</icon1>
+			<function type="normal">
+				<instruction>Clipboard COPYNAMES=unc</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;URLs</label>
+			<tip>Copy the locations of all selected files to the clipboard as URLs</tip>
+			<icon1>#copyfilenames</icon1>
+			<function type="normal">
+				<instruction>Clipboard COPYNAMES=url</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" textcol="none" type="menu">
+			<label>&amp;MD5 Checksums</label>
+			<icon1>#copyfilenames</icon1>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>&quot;&amp;File : Hash&quot;</label>
+				<tip>Copy the MD5 checksums of all selected files to the clipboard in the style &quot;File : Hash&quot;</tip>
+				<icon1>#copyfilenames</icon1>
+				<function type="normal">
+					<instruction>Clipboard COPYNAMES=hash</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>&quot;&amp;Hash *File&quot;</label>
+				<tip>Copy the MD5 checksums of all selected files to the clipboard in the style &quot;Hash *File&quot;</tip>
+				<icon1>#copyfilenames</icon1>
+				<function type="normal">
+					<instruction>Clipboard COPYNAMES=hash2</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>&quot;H&amp;ash&quot;</label>
+				<tip>Copy the MD5 checksums of all selected files to the clipboard in the style &quot;Hash&quot;</tip>
+				<icon1>#copyfilenames</icon1>
+				<function type="normal">
+					<instruction>Clipboard COPYNAMES=hash3</instruction>
+				</function>
+			</button>
+		</button>
+		<button backcol="none" display="both" separate="yes" textcol="none" type="menu">
+			<label>SH&amp;A-1 Checksums</label>
+			<icon1>#copyfilenames</icon1>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>&quot;&amp;File : Hash&quot;</label>
+				<tip>Copy the SHA-1 checksums of all selected files to the clipboard in the style &quot;File : Hash&quot;</tip>
+				<icon1>#copyfilenames</icon1>
+				<function type="normal">
+					<instruction>Clipboard COPYNAMES=hash4</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>&quot;&amp;Hash *File&quot;</label>
+				<tip>Copy the SHA-1 checksums of all selected files to the clipboard in the style &quot;Hash *File&quot;</tip>
+				<icon1>#copyfilenames</icon1>
+				<function type="normal">
+					<instruction>Clipboard COPYNAMES=hash5</instruction>
+				</function>
+			</button>
+			<button backcol="none" display="both" label_pos="right" textcol="none">
+				<label>&quot;H&amp;ash&quot;</label>
+				<tip>Copy the SHA-1 checksums of all selected files to the clipboard in the style &quot;Hash&quot;</tip>
+				<icon1>#copyfilenames</icon1>
+				<function type="normal">
+					<instruction>Clipboard COPYNAMES=hash6</instruction>
+				</function>
+			</button>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Complete Folder Listing</label>
+			<tip>Copy a complete listing of the current folder to the clipboard</tip>
+			<icon1>#copyfilenames</icon1>
+			<function type="normal">
+				<instruction>Print FOLDER AS=txt TO=clip FLATVIEW=no QUIET</instruction>
+			</function>
+		</button>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+		<label>&amp;ZIP Folder Read-Only</label>
+		<tip>Toggle the &apos;read-only&apos; state of the current ZIP folder</tip>
+		<icon1>#readonly</icon1>
+		<function type="normal">
+			<instruction>Set READONLY=Toggle</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>Select &amp;All</label>
+		<tip>Select all the files and folders in the active Lister</tip>
+		<icon1>#selectall</icon1>
+		<function type="normal">
+			<instruction>Select ALL</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>Select &amp;None</label>
+		<tip>Deselect all files and folders in the active Lister</tip>
+		<icon1>#selectnone</icon1>
+		<function type="normal">
+			<instruction>Select NONE</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" hotkey="ctrl+I" label_pos="right" textcol="none">
+		<label>&amp;Invert Selection</label>
+		<tip>Invert the selection status of all files in the active Lister</tip>
+		<icon1>#selectinvert</icon1>
+		<function type="normal">
+			<instruction>Select INVERT</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none" type="menu">
+		<label>S&amp;elect Other</label>
+		<icon1>#advancedselect</icon1>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Reselect</label>
+			<tip>Reselect all files that were used in the previous command</tip>
+			<icon1>#reselect</icon1>
+			<function type="normal">
+				<instruction>Select RESELECT</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;By Pattern...</label>
+			<tip>Select files and folders in the active Lister by wildcard pattern</tip>
+			<icon1>#selectwild</icon1>
+			<function type="normal">
+				<instruction>Select</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+			<label>&amp;Advanced...</label>
+			<tip>Advanced file selection based on criteria other than the filename</tip>
+			<icon1>#advancedselect</icon1>
+			<function type="normal">
+				<instruction>Select ADVANCED</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Same Extensions</label>
+			<tip>Select all files with the same extensions as the files already selected</tip>
+			<icon1>#advancedselect</icon1>
+			<function type="normal">
+				<instruction>Select SIMILAR</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+			<label>Sa&amp;me Base Names</label>
+			<tip>Select all files with the same base names (name without extension) as the files already selected</tip>
+			<icon1>#advancedselect</icon1>
+			<function type="normal">
+				<instruction>Select SIMILARBASE </instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>Source to &amp;Destination</label>
+			<tip>Select files in the destination with the same names as the files currently selected in the source</tip>
+			<icon1>#syncpane1</icon1>
+			<function type="normal">
+				<instruction>Select SOURCETODEST DESELECTNOMATCH</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>S&amp;ource to Destination (ignore extensions)</label>
+			<tip>Select files in the destination with the same name stems  as the files currently selected in the source. Extensions are allowed to differ.</tip>
+			<icon1>#syncpane1</icon1>
+			<function type="normal">
+				<instruction>Select SOURCETODEST=noext DESELECTNOMATCH</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+			<label>&amp;Not in Destination</label>
+			<tip>Select those file names in the source which do not exist in the destination</tip>
+			<icon1>#syncpane1</icon1>
+			<function type="normal">
+				<instruction>Select DESTTOSOURCE=notin</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>S&amp;election to Checkboxes</label>
+			<tip>Set the checkbox state to match the current selection</tip>
+			<icon1>#checkboxmode</icon1>
+			<function type="normal">
+				<instruction>Select TOCHECKS</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>&amp;Checkboxes to Selection</label>
+			<tip>Set the selection to match the checkbox state</tip>
+			<icon1>#checkboxmode</icon1>
+			<function type="normal">
+				<instruction>Select FROMCHECKS </instruction>
+			</function>
+		</button>
+	</button>
+	<button backcol="none" display="label" label_pos="right" textcol="none">
+		<label>Edit Menu Marker</label>
+		<tip>Marks the place in a menu where Namespace-specific menu items from the &apos;Edit&apos; menu are to be displayed</tip>
+		<function type="normal">
+			<instruction>Marker MENU=Edit</instruction>
+		</function>
+	</button>
+</button>

@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<button backcol="none" display="label" label_pos="right" textcol="none" type="menu">
+	<label>&amp;File</label>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>&amp;New Lister</label>
+		<tip>Open a new Lister</tip>
+		<icon1>#newlister</icon1>
+		<function type="normal">
+			<instruction>Go NEW</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none" type="menu">
+		<label>New &amp;Tab(s) For</label>
+		<icon1>#newtab</icon1>
+		<button backcol="none" display="both" hotkey="ctrl+N" label_pos="right" textcol="none">
+			<label>&amp;Current</label>
+			<tip>Open a new tab showing the current folder</tip>
+			<icon1>#newtab</icon1>
+			<function type="normal">
+				<instruction>Go CURRENT NEWTAB</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" hotkey="ctrl+N" label_pos="right" textcol="none">
+			<label>&amp;Selected</label>
+			<tip>Open a new tab for each of the selected folders (or shortcuts to folders)</tip>
+			<icon1>#duplicatetab</icon1>
+			<function type="normal">
+				<instruction>Go NEWTAB=nofocus,findexisting FROMSEL</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+			<label>&amp;Parent</label>
+			<tip>Open a new tab showing the parent folder</tip>
+			<icon1>#goupnewtab</icon1>
+			<function type="normal">
+				<instruction>Go UP NEWTAB</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="both" label_pos="right" textcol="none">
+			<label>P&amp;arents in Find Results</label>
+			<tip>Open a new tab for the parent of each selected item (useful in Find Results)</tip>
+			<icon1>#goupnewtab</icon1>
+			<function type="normal">
+				<instruction>Go OPENCONTAINER NEWTAB=findexisting,nofocus</instruction>
+			</function>
+		</button>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>&amp;Close Tab</label>
+		<tip>Close the current Folder Tab</tip>
+		<icon1>#closetab</icon1>
+		<function type="normal">
+			<instruction>Go TABCLOSE</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>&amp;Undo Close Tab</label>
+		<tip>Reopen the last tab or tabs that were closed</tip>
+		<icon1>#undoclosetab</icon1>
+		<function type="normal">
+			<instruction>Go TABUNDOCLOSE</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+		<label>Cl&amp;ose Lister</label>
+		<tip>Close the current Lister</tip>
+		<icon1>#closelister</icon1>
+		<function type="normal">
+			<instruction>Close</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+		<label>&amp;Exit Directory Opus</label>
+		<tip>Exit Directory Opus</tip>
+		<icon1>#exit</icon1>
+		<function type="normal">
+			<instruction>Close PROGRAM=confirm</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="label" label_pos="right" textcol="none">
+		<label>File Menu Marker</label>
+		<tip>Marks the place in a menu where Namespace-specific menu items from the &apos;File&apos; menu are to be displayed</tip>
+		<function type="normal">
+			<instruction>Marker MENU=File</instruction>
+		</function>
+	</button>
+</button>

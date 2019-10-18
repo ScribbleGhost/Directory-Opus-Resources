@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<button backcol="none" display="label" label_pos="right" textcol="none" type="menu">
+	<label>Help</label>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>&amp;Help</label>
+		<tip>Display the Directory Opus online help</tip>
+		<icon1>#help</icon1>
+		<function type="normal">
+			<instruction>Help</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none" type="menu">
+		<label>&amp;Logs</label>
+		<icon1>#logs</icon1>
+		<button backcol="none" display="label" label_pos="right" textcol="none">
+			<label>&amp;File Log</label>
+			<tip>Display a log of file and folder operations</tip>
+			<icon1>#logs</icon1>
+			<function type="normal">
+				<instruction>Set UTILITY=FileLog,Toggle</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="label" label_pos="right" textcol="none">
+			<label>FT&amp;P Logs</label>
+			<tip>Display the logs of FTP activity</tip>
+			<icon1>#logs</icon1>
+			<function type="normal">
+				<instruction>Set UTILITY=FTPLog,Toggle</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="label" label_pos="right" textcol="none">
+			<label>&amp;Undo Log</label>
+			<tip>Display the Undo Log, which allows you to selectively undo your previous actions</tip>
+			<icon1>#undodlg</icon1>
+			<function type="normal">
+				<instruction>Set UTILITY=Undo,Toggle</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="label" label_pos="right" textcol="none">
+			<label>&amp;Email Log</label>
+			<tip>Display a log of sent and pending emails</tip>
+			<icon1>#logs</icon1>
+			<function type="normal">
+				<instruction>Set UTILITY=Email,Toggle</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="label" label_pos="right" textcol="none">
+			<label>&amp;Script Log</label>
+			<tip>Displays logs for scripts and other activities</tip>
+			<function type="normal">
+				<instruction>Set UTILITY=OtherLog,Toggle</instruction>
+			</function>
+		</button>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none" type="menu">
+		<label>&amp;Directory Opus on the Web</label>
+		<icon1>#ftpconnect</icon1>
+		<button backcol="none" display="label" label_pos="right" textcol="none">
+			<label>&amp;Directory Opus Home</label>
+			<tip>Access the main GP Software web site</tip>
+			<function type="normal">
+				<instruction>http://www.gpsoft.com.au/DScripts/redirect.asp?page=home</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="label" label_pos="right" separate="yes" textcol="none">
+			<label>&amp;Resource Centre</label>
+			<tip>Directory Opus User Resource Centre</tip>
+			<function type="normal">
+				<instruction>http://www.gpsoft.com.au/DScripts/redirect.asp?page=resource</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="label" label_pos="right" textcol="none">
+			<label>&amp;Product News</label>
+			<tip>Access the latest Directory Opus news</tip>
+			<function type="normal">
+				<instruction>http://www.gpsoft.com.au/DScripts/redirect.asp?page=news</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="label" label_pos="right" textcol="none">
+			<label>&amp;Frequently Asked Questions</label>
+			<tip>Search our database of Frequently Asked Questions</tip>
+			<function type="normal">
+				<instruction>http://www.gpsoft.com.au/DScripts/redirect.asp?page=faq</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="label" label_pos="right" separate="yes" textcol="none">
+			<label>&amp;Online Support</label>
+			<tip>Online Directory Opus support page</tip>
+			<function type="normal">
+				<instruction>http://www.gpsoft.com.au/DScripts/redirect.asp?page=support</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="label" label_pos="right" textcol="none">
+			<label>&amp;Getting to know Directory Opus</label>
+			<tip>An excellent online tutorial to introduce you to Directory Opus</tip>
+			<function type="normal">
+				<instruction>http://www.gpsoft.com.au/DScripts/redirect.asp?page=intro</instruction>
+			</function>
+		</button>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+		<label>&amp;Check for Program Updates</label>
+		<tip>Check for updated versions of Directory Opus</tip>
+		<icon1>#checkforupdates</icon1>
+		<function type="normal">
+			<instruction>Help CHECKUPDATE</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>Licence &amp;Manager</label>
+		<tip>Display the Directory Opus Licence Manager</tip>
+		<icon1>#licencemanager</icon1>
+		<function type="normal">
+			<instruction>Help LICENCEMANAGER</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+		<label>&amp;About Directory Opus</label>
+		<tip>Display Directory Opus copyright and version information</tip>
+		<icon1>#about</icon1>
+		<function type="normal">
+			<instruction>Help ABOUT</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="label" label_pos="right" textcol="none">
+		<label>Help Menu Marker</label>
+		<tip>Marks the place in a menu where Namespace-specific menu items from the &apos;Help&apos; menu are to be displayed</tip>
+		<function type="normal">
+			<instruction>Marker MENU=Help</instruction>
+		</function>
+	</button>
+</button>
