@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<button backcol="none" display="both" label_pos="right" textcol="none">
+	<label>This PC</label>
+	<tip>This PC</tip>
+	<icon1>C:\Windows\System32\imageres.dll,-109</icon1>
+	<function type="normal">
+		<instruction>IDL:?AAAAFAAfUOBP0CDqOmkQotgIACswMJ0AAA==</instruction>
+	</function>
+</button>

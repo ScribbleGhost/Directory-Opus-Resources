@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<button always_enable="yes" backcol="none" display="icon" label_pos="right" textcol="none" timed="yes" type="menu_button">
+	<label>&amp;Go Up</label>
+	<tip>Go up to %1</tip>
+	<icon1>#goup</icon1>
+	<function type="normal">
+		<instruction>Go UP BACK USEQUALKEYS</instruction>
+	</function>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>&amp;Go To Root</label>
+		<tip>Load the root folder of the current folder</tip>
+		<icon1>#goroot</icon1>
+		<function type="normal">
+			<instruction>Go ROOT USEQUALKEYS</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>&amp;Parent in New Lister</label>
+		<tip>Parent to %1 (new lister)</tip>
+		<icon1>#goupnewlister</icon1>
+		<function type="normal">
+			<instruction>Go UP NEW</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+		<label>P&amp;arent in New Tab</label>
+		<tip>Parent to %1 (new tab)</tip>
+		<icon1>#goupnewtab</icon1>
+		<function type="normal">
+			<instruction>Go UP NEWTAB</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none" type="menu">
+		<label>&amp;Recent Locations</label>
+		<icon1>#recentlist</icon1>
+		<button backcol="none" display="label" label_pos="right" separate="yes" textcol="none">
+			<label>&amp;Clear Recent List</label>
+			<tip>Clears the list of the most recently visited folders</tip>
+			<function type="normal">
+				<instruction>Recent CLEAR</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="label" label_pos="right" textcol="none">
+			<label>&amp;Recent Locations</label>
+			<tip>Shows your most recently visited folders</tip>
+			<function type="normal">
+				<instruction>Recent SHOWICONS USEQUALKEYS</instruction>
+			</function>
+		</button>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>&amp;Desktop</label>
+		<icon1>#godesktop</icon1>
+		<function type="normal">
+			<instruction>Go /desktop USEQUALKEYS</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>D&amp;ocuments</label>
+		<icon1>#gomydocuments</icon1>
+		<function type="normal">
+			<instruction>Go /mydocuments USEQUALKEYS</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>&amp;Libraries</label>
+		<icon1>#golibraries</icon1>
+		<function type="normal">
+			<instruction>Go lib:// USEQUALKEYS</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>&amp;Computer</label>
+		<icon1>#gomycomputer</icon1>
+		<function type="normal">
+			<instruction>Go /mycomputer USEQUALKEYS</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>&amp;Network</label>
+		<icon1>#gonetwork</icon1>
+		<function type="normal">
+			<instruction>Go /network USEQUALKEYS</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>&amp;FTP</label>
+		<icon1>#ftpconnect</icon1>
+		<function type="normal">
+			<instruction>Go ftp:// USEQUALKEYS</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>F&amp;ile Collections</label>
+		<icon1>#gocollection</icon1>
+		<function type="normal">
+			<instruction>Go coll:// USEQUALKEYS</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+		<label>R&amp;ecycle Bin</label>
+		<icon1>#gotrash</icon1>
+		<function type="normal">
+			<instruction>Go /trash USEQUALKEYS</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" hotkey="f5" label_pos="right" textcol="none">
+		<label>Refre&amp;sh\tF5</label>
+		<tip>Refresh the contents of the current folder</tip>
+		<icon1>#refresh</icon1>
+		<function type="normal">
+			<instruction>Go REFRESH=source</instruction>
+		</function>
+	</button>
+</button>

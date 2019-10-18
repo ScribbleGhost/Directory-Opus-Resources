@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<button backcol="none" display="both" textcol="none">
+	<label>S&amp;how Hidden Files</label>
+	<tip>Toggle display of hidden files (those with the H attribute set and the S attribute not set)</tip>
+	<icon1>#showhidden</icon1>
+	<function type="normal">
+		<instruction>Set GLOBALHIDEHIDDEN=Toggle INVERT</instruction>
+	</function>
+</button>

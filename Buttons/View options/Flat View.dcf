@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<button backcol="none" display="both" label_pos="right" textcol="none" timed="yes" type="menu_button">
+	<label>&amp;Flat View</label>
+	<tip>Displays the contents of all sub-folders in the current file display</tip>
+	<icon1>#flatviewgrouped</icon1>
+	<function type="normal">
+		<instruction>@toggle:if FLATVIEW=Toggle</instruction>
+		<instruction>@icon:flatviewmixed,FLATVIEW=Mixed</instruction>
+		<instruction>@icon:flatviewmixednofolders,FLATVIEW=MixedNoFolders</instruction>
+		<instruction />
+		<instruction>@ifset:FLATVIEW=Mixed</instruction>
+		<instruction>Set FLATVIEW=Off</instruction>
+		<instruction>@ifset:FLATVIEW=Grouped</instruction>
+		<instruction>Set FLATVIEW=On,Mixed</instruction>
+		<instruction>@ifset:else</instruction>
+		<instruction>Set FLATVIEW=On,Grouped</instruction>
+	</function>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>&amp;Grouped</label>
+		<tip>Displays the contents of all sub-folders in the current file display (grouped by location)</tip>
+		<icon1>#flatviewgrouped</icon1>
+		<function type="normal">
+			<instruction>Set FLATVIEW=On,Grouped</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>&amp;Mixed</label>
+		<tip>Displays the contents of all sub-folders in the current file display</tip>
+		<icon1>#flatviewmixed</icon1>
+		<function type="normal">
+			<instruction>Set FLATVIEW=On,Mixed</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+		<label>M&amp;ixed (No Folders)</label>
+		<tip>Displays the contents of all sub-folders in the current file display (but hides the folders themselves)</tip>
+		<icon1>#flatviewmixednofolders</icon1>
+		<function type="normal">
+			<instruction>Set FLATVIEW=On,MixedNoFolders</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>&amp;Off</label>
+		<tip>Turns Flat View off and returns the folder display to normal</tip>
+		<icon1>#flatviewoff</icon1>
+		<function type="normal">
+			<instruction>Set FLATVIEW=Off</instruction>
+		</function>
+	</button>
+</button>

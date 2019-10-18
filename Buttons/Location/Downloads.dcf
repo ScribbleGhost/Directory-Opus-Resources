@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<button backcol="none" display="both" label_pos="right" textcol="none">
+	<label>Downloads</label>
+	<tip>Go to Downloads</tip>
+	<icon1>C:\Windows\system32\imageres.dll,-184</icon1>
+	<function type="normal">
+		<instruction>Go &quot;%userprofile%\Downloads&quot;</instruction>
+	</function>
+</button>

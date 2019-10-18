@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<button backcol="none" display="both" textcol="none">
+	<label>Viewer Pane</label>
+	<tip>Show or hide the Lister Viewer Pane</tip>
+	<icon1>#viewerpane</icon1>
+	<function type="normal">
+		<instruction>Set VIEWPANE=Toggle</instruction>
+	</function>
+</button>

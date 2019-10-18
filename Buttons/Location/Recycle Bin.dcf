@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<button backcol="none" display="both" label_pos="right" textcol="none">
+	<label>Recycle Bin</label>
+	<tip>Open &apos;Recycle Bin&apos; in the current Lister</tip>
+	<icon1>/system/imageres.dll,49</icon1>
+	<function type="normal">
+		<instruction>Go /trash</instruction>
+	</function>
+</button>

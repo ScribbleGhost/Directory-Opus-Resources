@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<button backcol="none" display="both" textcol="none">
+	<label>Metadata Pane</label>
+	<tip>Show or hide the Metadata Pane</tip>
+	<icon1>#metapane</icon1>
+	<function type="normal">
+		<instruction>Set METAPANE=Toggle</instruction>
+	</function>
+</button>

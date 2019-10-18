@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<button backcol="none" display="both" textcol="none">
+	<label>&amp;Show System Files</label>
+	<tip>Toggle display of system files and folders (those with the H and S attributes set)</tip>
+	<icon1>#showsystem</icon1>
+	<function type="normal">
+		<instruction>Set HIDESYSTEMFILES=Toggle INVERT</instruction>
+	</function>
+</button>

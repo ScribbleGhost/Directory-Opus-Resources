@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+	<label>OneDrive</label>
+	<tip>Go to OneDrive</tip>
+	<icon1>/system/imageres.dll,220</icon1>
+	<function type="normal">
+		<instruction>Go &quot;OneDrive&quot;</instruction>
+	</function>
+</button>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<button backcol="none" display="both" label_pos="right" textcol="none">
+	<label>Rename</label>
+	<tip>Change the names of selected files and folders</tip>
+	<icon1>#rename</icon1>
+	<function type="normal">
+		<instruction>Rename</instruction>
+	</function>
+</button>

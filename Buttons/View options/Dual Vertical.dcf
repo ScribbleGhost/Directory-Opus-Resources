@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<button backcol="none" display="both" label_pos="right" textcol="none">
+	<label>Dual Vertical</label>
+	<tip>Display two folders side-by-side</tip>
+	<icon1>#dualdisplay</icon1>
+	<function type="normal">
+		<instruction>Set DUAL=Toggle,Vert,ToggleLayout</instruction>
+	</function>
+</button>

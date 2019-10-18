@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<button backcol="none" display="icon" textcol="none" type="three_button">
+	<label>Shuffle</label>
+	<icon1>#view</icon1>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>Shuffle</label>
+		<tip>Randomly re-orders all files and folders in the current folder.</tip>
+		<icon1>#rename3</icon1>
+		<function type="script">
+			<instruction>@script JScript</instruction>
+			<instruction>function OnClick(clickData)</instruction>
+			<instruction>{</instruction>
+			<instruction>	var vecNewOrder = DOpus.Create.Vector();</instruction>
+			<instruction>	vecNewOrder.reserve(clickData.func.sourcetab.all.count);</instruction>
+			<instruction>	for (var eItems = new Enumerator(clickData.func.sourcetab.all); !eItems.atEnd(); eItems.moveNext())</instruction>
+			<instruction>	{</instruction>
+			<instruction>		vecNewOrder.push_back(eItems.item().name);</instruction>
+			<instruction>	}</instruction>
+			<instruction />
+			<instruction>	var currentIndex = vecNewOrder.size;</instruction>
+			<instruction>	var temporaryValue;</instruction>
+			<instruction>	var randomIndex;</instruction>
+			<instruction />
+			<instruction>	// While there remain elements to shuffle...</instruction>
+			<instruction>	while (0 !== currentIndex)</instruction>
+			<instruction>	{</instruction>
+			<instruction>	    // Pick a remaining element...</instruction>
+			<instruction>	    randomIndex = Math.floor(Math.random() * currentIndex);</instruction>
+			<instruction>	    currentIndex -= 1;</instruction>
+			<instruction />
+			<instruction>	    // And swap it with the current element.</instruction>
+			<instruction>		vecNewOrder.exchange(currentIndex, randomIndex);</instruction>
+			<instruction>	}</instruction>
+			<instruction />
+			<instruction>	clickData.func.Command.RunCommand(&quot;Set MANUALSORT=On&quot;);</instruction>
+			<instruction>	var sortOrder = clickData.func.sourcetab.format.manual_sort_order;</instruction>
+			<instruction>	sortOrder.SetOrder(vecNewOrder);</instruction>
+			<instruction>	clickData.func.Command.RunCommand(&quot;Select FIRST SETFOCUS&quot;);</instruction>
+			<instruction>	clickData.func.Command.RunCommand(&quot;Select SHOWFOCUS&quot;);</instruction>
+			<instruction>	clickData.func.Command.RunCommand(&quot;Select NONE&quot;);</instruction>
+			<instruction>}</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>Reset</label>
+		<icon1>#sort_alpha</icon1>
+		<function type="normal">
+			<instruction>Set MANUALSORT=off </instruction>
+			<instruction>Select FIRST SETFOCUS</instruction>
+			<instruction>Select SHOWFOCUS</instruction>
+			<instruction>Select NONE</instruction>
+		</function>
+	</button>
+</button>

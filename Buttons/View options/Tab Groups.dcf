@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<button backcol="none" display="icon" textcol="none" type="menu_button">
+	<label>Tab Groups</label>
+	<tip>Displays a list of your Folder Tab Groups</tip>
+	<icon1>#foldertabgrouplist</icon1>
+	<function type="normal">
+		<instruction>Prefs PAGE=tabgroups</instruction>
+	</function>
+	<button backcol="none" display="label" textcol="none">
+		<label>Go TABGROUPLIST</label>
+		<function type="normal">
+			<instruction>Go TABGROUPLIST</instruction>
+		</function>
+	</button>
+</button>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<button backcol="none" display="icon" hotkey="alt+right" label_pos="right" textcol="none" timed="yes" type="menu_button">
+	<label>Forward</label>
+	<tip>Go forward to %1</tip>
+	<icon1>#goforward</icon1>
+	<function type="normal">
+		<instruction>Go FORWARD USEQUALKEYS</instruction>
+	</function>
+	<button backcol="none" display="label" label_pos="right" textcol="none">
+		<label>Forward</label>
+		<tip>Go forward to the next folder in the history (with drop-down list)</tip>
+		<function type="normal">
+			<instruction>Go FORWARDLIST</instruction>
+		</function>
+	</button>
+</button>

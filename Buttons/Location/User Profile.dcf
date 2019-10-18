@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<button backcol="none" display="both" label_pos="right" textcol="none">
+	<label>User Profile</label>
+	<tip>Go to User Profile</tip>
+	<icon1>C:\Windows\System32\imageres.dll,-123</icon1>
+	<function type="normal">
+		<instruction>Go &quot;%userprofile%&quot;</instruction>
+	</function>
+</button>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<button backcol="none" display="both" label_pos="right" textcol="none">
+	<label>Desktop</label>
+	<tip>Go to Desktop</tip>
+	<icon1>C:\Windows\system32\imageres.dll,-183</icon1>
+	<function type="normal">
+		<instruction>Go &quot;Desktop&quot;</instruction>
+	</function>
+</button>

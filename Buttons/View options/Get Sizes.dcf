@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<button backcol="none" display="icon" icon_size="large" label_pos="right" textcol="none">
+	<label>Get Sizes</label>
+	<tip>Calculate the byte sizes of selected folders</tip>
+	<icon1>#getsizes</icon1>
+	<function type="normal">
+		<instruction>GetSizes</instruction>
+	</function>
+</button>

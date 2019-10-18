@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<button backcol="none" display="icon" icon_size="large" label_pos="right" textcol="none">
+	<label>Navigation Lock</label>
+	<tip>Lock together the navigation of both sides of a dual-display Lister</tip>
+	<icon1>#navlock</icon1>
+	<function type="normal">
+		<instruction>Set NAVLOCK=Toggle</instruction>
+	</function>
+</button>

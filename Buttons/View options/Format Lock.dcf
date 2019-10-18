@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<button backcol="none" display="both" textcol="none">
+	<label>Format Lock</label>
+	<tip>Lock or unlock the current format in the Lister</tip>
+	<icon1>#formatlock</icon1>
+	<function type="normal">
+		<instruction>Set FORMATLOCK=Toggle</instruction>
+	</function>
+</button>
