@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<button backcol="none" display="label" textcol="none">
+	<label>Compress PNG file</label>
+	<tip>This will overwrite your original file. Requires pngquant.exe in PATH.</tip>
+	<icon1>#newcommand</icon1>
+	<function type="batch">
+		<instruction>@echo off</instruction>
+		<instruction>:start</instruction>
+		<instruction>pngquant.exe 256 --force --ext .png --quality=50-90 --ordered --speed=1 --strip --skip-if-larger {file}</instruction>
+		<instruction>shift</instruction>
+		<instruction>if NOT x%1==x goto start</instruction>
+	</function>
+</button>
