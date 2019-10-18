@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<button backcol="none" display="label" label_pos="right" textcol="none" type="menu">
+	<label>FT&amp;P</label>
+	<button backcol="none" display="both" hotkey="ctrl+Q" label_pos="right" separate="yes" textcol="none">
+		<label>&amp;FTP Connect...\tCtrl+Q</label>
+		<tip>Connect to an FTP site</tip>
+		<icon1>#ftpconnect</icon1>
+		<function type="normal">
+			<instruction>Go FTP</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>&amp;Add to Address Book</label>
+		<tip>Add the current FTP site to the Address Book</tip>
+		<icon1>#ftpaddsite</icon1>
+		<function type="normal">
+			<instruction>Prefs ADDFTPSITE</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" hotkey="ctrl+shift+Q" label_pos="right" textcol="none">
+		<label>&amp;Edit Address Book...\tCtrl+Shift+Q</label>
+		<tip>Opens the FTP Address Book editor</tip>
+		<icon1>#ftpaddressbook</icon1>
+		<function type="normal">
+			<instruction>Prefs FTPSITES</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+		<label>&amp;Site Properties</label>
+		<tip>Shows properties dialog for the current FTP site</tip>
+		<icon1>#ftpsiteproperties</icon1>
+		<function type="normal">
+			<instruction>Properties FTPSITE</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="label" label_pos="right" separate="yes" textcol="none">
+		<label>FTP Addresses</label>
+		<tip>Shows a list of your FTP addresses</tip>
+		<function type="normal">
+			<instruction>Go FTPSITELIST FTPSITEICONS USEQUALKEYS</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="both" label_pos="right" textcol="none">
+		<label>&amp;Display FTP Logs</label>
+		<tip>Displays the logs of FTP activity</tip>
+		<icon1>#logs</icon1>
+		<function type="normal">
+			<instruction>Set UTILITY=FTPLog,Toggle</instruction>
+		</function>
+	</button>
+</button>
