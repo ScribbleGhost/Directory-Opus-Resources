@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rename_preset autorename="yes" case="none" ignoreext="yes" preset="Time-Stamp Names" type="normal" version="12">
+	<from>*</from>
+	<to>{date|yyyy.MM.dd}-{time|HH.mm.ss} - *</to>
+</rename_preset>

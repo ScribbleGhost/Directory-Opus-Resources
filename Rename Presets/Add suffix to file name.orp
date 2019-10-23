@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rename_preset case="none" fave="yes" ignoreext="yes" preset="Add suffix to file name" type="normal" version="12">
+	<from>*</from>
+	<to>*.abc</to>
+</rename_preset>

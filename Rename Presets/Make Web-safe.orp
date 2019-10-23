@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rename_preset case="none" preset="Make Web-safe" type="regexp" version="12">
+	<from>(.*)([^-0-9a-zA-Z._]+)(.*)#</from>
+	<to>\1_\3</to>
+</rename_preset>
