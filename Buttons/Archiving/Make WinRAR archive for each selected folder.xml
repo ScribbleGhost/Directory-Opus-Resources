@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<button backcol="none" display="both" label_pos="right" textcol="none">
+	<label>Make WinRAR archive for each selected folder</label>
+	<tip>Make WinRAR archive for each selected folder</tip>
+	<icon1></icon1>
+	<function type="batch">
+		<instruction>@echo off</instruction>
+		<instruction>&quot;C:\Program Files\WinRAR\Rar.exe&quot; -dh -r a &quot;{file$}.rar&quot; &quot;{filepath$}\&quot; -ep1 -r -m5</instruction>
+	</function>
+</button>
