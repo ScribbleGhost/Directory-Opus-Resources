@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rename_preset case="none" preset="0" type="normal" typeval="0">
+	<from>*</from>
+	<to>1.*</to>
+</rename_preset>

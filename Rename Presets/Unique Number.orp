@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rename_preset case="none" script="yes" type="normal" version="12">
+	<from>*</from>
+	<to>*</to>
+	<script>@script vbscript
+
+Option Explicit
+
+Dim StartingNumber
+Dim PadTo
+
+&apos; First number to try. Usually 1.
+StartingNumber = 1
+
+&apos; Number of digits to pad the number to. For example, if PadTo
+&apos; is 3 then the script will generate 001, 002, 003, 004, etc..
+PadTo = 3
+
+Dim fs
+Set fs = CreateObject(&quot;Scripting.FileSystemObject&quot;)
+
+Function OnGetNewName(ByRef GetNewNameData)
+
+	Dim bAbsolutePath
+	Dim strNum
+	Dim strNewName
+	Dim strTryNewName
+	Dim strTryNewFullPath
+	Dim bNeedLoop
+	Dim num
+	Dim i
+
+	If PadTo &lt; 1 Then
+		PadTo = 1
+	End If
+
+	num = StartingNumber
+	StartingNumber = StartingNumber + 1 &apos; increase for next time
+	strNewName = GetNewNameData.newname
+
+	&apos; Work out if the new path is relative to the original path or if it&apos;s an absolute path.
+	&apos; For example, a rename from * to C:\* would move files to the root of C:\
+	If strNewName = fs.GetAbsolutePathName(strNewName) Then
+		bAbsolutePath = True
+	Else
+		bAbsolutePath = False
+	End If
+
+	bNeedLoop = True
+	
+	While bNeedLoop
+		&apos; Remove any existing number and insert the new number at the beginning
+		strNum = CStr(num)
+		If Len(strNum) &lt; PadTo Then
+			strNum = String(PadTo - Len(strNum), &quot;0&quot;) &amp; strNum
+		End If
+
+		for i = 1 to Len(strNum)
+			if Mid(strNewName, i, 1) &lt; &quot;0&quot; or Mid(strNewName, i, 1) &gt; &quot;9&quot; Then
+				Exit for
+			end if
+		Next
+		if i &lt;= Len(strNum) + 1 And Mid(strNewName, i, 1) = &quot; &quot; Then
+			OnGetNewName = Right(strNewName, Len(strNewName) - i)
+		end if
+
+		strTryNewName = strNum &amp; &quot; &quot; &amp; strNewName
+
+		&apos; If new name is the same as the old name, we don&apos;t need to do anything
+		if strTryNewName = GetNewNameData.item.name Then
+			bNeedLoop = False
+		else
+			&apos; Work out the full path to the new filename.
+			If bAbsolutePath Then	
+				strTryNewFullPath = strTryNewName
+			Else
+				strTryNewFullPath = fs.BuildPath(GetNewNameData.item.path, strTryNewName)
+			End If
+	
+			&apos; Check if the new filename already exists.
+			If fs.FileExists(strTryNewFullPath) Or fs.FolderExists(strTryNewFullPath) Then
+				&apos;DOpus.OutputString &quot;Already exists: &quot; &amp; strTryNewFullPath
+				num = num + 1
+			Else
+				strNewName = strTryNewName
+				&apos;DOpus.OutputString &quot;Generated name: &quot; &amp; strNewName
+				bNeedLoop = False
+			End If
+		end if
+	Wend
+
+  OnGetNewName = strNewName
+
+End Function
+</script>
+</rename_preset>

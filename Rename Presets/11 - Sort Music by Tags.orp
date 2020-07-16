@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rename_preset case="none" fileinfo="yes" type="normal" typeval="0">
+	<from>*</from>
+	<to>{mp3artist} - {mp3year} - {mp3album}\{mp3track|#2} - {mp3title}.{ext}</to>
+</rename_preset>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rename_preset case="none" ignoreext="yes" script="yes" type="normal" version="12">
+	<from>*</from>
+	<to>*</to>
+	<script>@script jscript
+function OnGetNewName(getNewNameData)
+{
+	var name = getNewNameData.newname_stem_m;
+	var ext = getNewNameData.newname_ext_m;
+	var parentName = getNewNameData.item.path.filepart;
+	parentName = parentName;
+
+	return parentName + ext;
+}
+</script>
+</rename_preset>

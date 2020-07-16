@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rename_preset case="none" type="regexp" typeval="0">
+	<from>(.+) - [0-9][0-9][0-9][0-9] - (.+)</from>
+	<to>\1 - \2</to>
+</rename_preset>

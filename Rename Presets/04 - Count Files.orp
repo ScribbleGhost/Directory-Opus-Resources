@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rename_preset case="none" preset="0" renumber="yes" type="regexp" typeval="0">
+	<from>(.*)\.(.*)</from>
+	<to>[#].\2</to>
+	<seq digits="4" inc="1" start="1" />
+</rename_preset>

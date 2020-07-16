@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<rename_preset case="none" fave="yes" ignoreext="yes" preset="Remove X characters" type="regexp" version="12">
+<rename_preset case="none" ignoreext="yes" preset="Remove X characters" type="regexp" version="12">
 	<from>(.+)....</from>
 	<to>\1</to>
 </rename_preset>

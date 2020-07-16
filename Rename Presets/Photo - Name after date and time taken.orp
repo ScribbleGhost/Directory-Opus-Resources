@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rename_preset case="none" ignoreext="yes" matching="yes" renumber="yes" type="normal" version="12">
+	<from>*</from>
+	<to>{shootingtime|D#yyyy.MM.dd - T#HH.mm.ss} -</to>
+	<seq digits="3" inc="1" start="1" />
+</rename_preset>

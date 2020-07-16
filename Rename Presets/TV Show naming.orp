@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<rename_preset case="none" fave="yes" preset="TV Show naming" renumber="yes" type="regexp" version="12">
+<rename_preset case="none" preset="TV Show naming" renumber="yes" type="regexp" version="12">
 	<from>(.*)\.(.*)</from>
 	<to>Title of the TV series - S01E[#].\2</to>
 	<seq digits="2" inc="1" start="1" />
